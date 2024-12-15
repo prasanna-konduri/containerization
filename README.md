@@ -15,7 +15,7 @@ This project aims to demonstrate building and deploying a static webpage using D
 ## Getting Started :
 
 1. **Clone the repository**:
-
+   - Clone the repository with the below command.
    ```bash
    git clone https://github.com/prasanna-konduri/containerization.git
    cd containerization
@@ -29,7 +29,7 @@ This project aims to demonstrate building and deploying a static webpage using D
    docker-compose up
    ```
 4. **Output**:
-   Open your browser and go to http://localhost:8080 to see your index.html.
+   - Open your browser and go to http://localhost:8080 to see your index.html.
 5. **Creating a ECR repository**:
    - Login to your AWS account.
    - Navigate to ECR service page.
@@ -56,5 +56,8 @@ This project aims to demonstrate building and deploying a static webpage using D
      ```
      docker push aws-account-id.dkr.ecr.your-region.amazonaws.com/your-ECR-repo-name:latest
      ```
+7. **Use the Image to get deployed in ECS**:
+   - Go to your A
+## Sample output Screenshots:
 
    
