@@ -57,7 +57,26 @@ This project aims to demonstrate building and deploying a static webpage using D
      docker push aws-account-id.dkr.ecr.your-region.amazonaws.com/your-ECR-repo-name:latest
      ```
 7. **Use the Image to get deployed in ECS**:
-   - Go to your A
-## Sample output Screenshots:
 
+   A. Create an ECS Task Definition
+
+      - Define the Container Settings: Create a new task definition that specifies the container configurations, including CPU, memory, port mappings, and environment variables.
+      - Reference the ECR Image: In the task definition, use the image URI from ECR so ECS knows which container image to deploy.
+
+   B. Deploy the ECS Service on a Cluster
+
+      - Set Up or Use an Existing ECS Cluster: Choose or create a cluster where your service will run.
+      - Create and Configure the Service: Define an ECS service that uses your task definition, set desired instance counts, configure auto-scaling if needed, and optionally attach a load balancer to manage traffic.
+      - Deploy and Monitor: Launch the service and monitor its health and logs to ensure the deployment is successful
+
+## Sample output Screenshots:
+<img width="1440" alt="docker1" src="https://github.com/user-attachments/assets/3440f7f0-55a0-42b0-ada4-17dc551248da" />
+
+<img width="1440" alt="docker3" src="https://github.com/user-attachments/assets/bf4f2384-8e33-4b46-b1df-697179bc90c8" />
+
+<img width="1440" alt="docker2" src="https://github.com/user-attachments/assets/334186da-fd41-439c-8424-5e1eaafc01f4" />
+
+<img width="1440" alt="docker5" src="https://github.com/user-attachments/assets/3ab39fd2-383a-43d9-b2e9-3f14a854a20d" />
+
+<img width="1440" alt="docker6" src="https://github.com/user-attachments/assets/6c5bd600-c053-4d08-930a-1a890bb55aff" />
    
